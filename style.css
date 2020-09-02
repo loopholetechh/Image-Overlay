@@ -1,0 +1,58 @@
+body
+{
+    background-image: linear-gradient(to bottom right, indigo, cyan);
+    background-repeat: no-repeat;
+    color: #ffffff;
+    height: 100vh;
+}
+
+.container
+{
+    width: 500px;
+    position: relative;
+}
+
+.image
+{
+    display: block;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+}
+
+.overlay
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    border: 2px dotted #ffffff;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container:hover .overlay
+{
+    opacity: 1;
+}
+
+.text
+{
+    color: #ffffff;
+    font-size: 32px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50px, -50px); 
+    -ms-transform: translate(-50px, -50px);
+    transform: translate(-50px, -50px);
+    text-align: center;
+}
